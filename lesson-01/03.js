@@ -10,7 +10,7 @@ let sum = 100;
 let counter = 20;
 let num = 0;
 let i = 1;
-let functionCounter = 1
+let functionCounter = 1;
 
 while (i <= counter) {
   if (i % 2 !== 0) {
