@@ -16,4 +16,4 @@ while (i <= 20) {
     i++
 }
 
-console.log(`Solution = ${number}`);
+console.log(`Answer = ${number}`);
