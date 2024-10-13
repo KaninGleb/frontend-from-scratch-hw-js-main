@@ -18,4 +18,4 @@ while (i <= factorialCounter) {
   i ++;
 }
 
-console.log(`Solution: ${num}`);
+console.log(`Answer: ${num}`);
