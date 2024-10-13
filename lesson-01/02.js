@@ -5,5 +5,17 @@
   Например, факториал числа 3 это 1 * 2 * 3 (6).
 */
 
-// your code
-let factorial
+// Solution:
+
+let factorial = 3628800;
+let factorialCounter = 10;
+let num = 1;
+let i = 1;
+
+while (i <= factorialCounter) {
+  num = num * i;
+  console.log(num);
+  i ++;
+}
+
+console.log(`Solution: ${num}`);
