@@ -5,21 +5,21 @@
 
 // Solution:
 
-// let sum
+let sum = 100;
 
 let counter = 20;
-let sum = 0;
+let num = 0;
 let i = 1;
 let functionCounter = 1
 
 while (i <= counter) {
   if (i % 2 !== 0) {
-    sum += i;
-    console.log(`🟰  Current number: ${sum - i}`);
+    num += i;
+    console.log(`🟰  Current number: ${num - i}`);
     console.log(`✅ Number added to sum: ${i}`);
   } else {
     console.log(`❌ Number not added: ${i}`);
   }
   i++;
 }
-console.log(`🏁 Final sum of odd numbers from 1 to 20: ${sum}`);
+console.log(`🏁 Final sum of odd numbers from 1 to 20: ${num}`);
