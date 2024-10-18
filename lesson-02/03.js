@@ -7,22 +7,19 @@
 // const score = Math.floor(Math.random() * 101); 
 // console.log(score);
 
-const score = 70;
+let score = 70;
 // let grade
 
 if (score >= 0 && score <= 49) {
     grade = "F";
-    console.log(grade);
 } else if (score >= 50 && score <= 69) {
-    grade = "D"
-    console.log(grade);
+    grade = "D";
 } else if (score >= 70 && score <= 79) {
-    grade = "C"
-    console.log(grade);
+    grade = "C";
 } else if (score >= 80 && score <= 89) {
-    grade = "B"
-    console.log(grade);
+    grade = "B";
 } else {
-    grade = "A"
-    console.log(grade);
-}
+    grade = "A";
+}  
+
+console.log(grade);
