@@ -7,7 +7,7 @@
 
 // True:
 const isAdmin = false;
-const isVerifiedUser = true;
+const isVerifiedUser = false;
 const hasSpecialPermission = true;
 const hasTemporaryPass = false;
 
@@ -22,9 +22,10 @@ let isAccess = true;
 // let isAccess = false;
 
 if ((isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass)) {
-    giveMeAccess = true;
-    console.log(giveMeAccess);
+    isAccess = true;
+    console.log(isAccess);
 } else {
-    console.log("False!");
+    isAccess = false;
+    console.log(isAccess);
 }
 // let giveMeAccess = (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass);
