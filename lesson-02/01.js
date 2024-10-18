@@ -5,22 +5,15 @@
 // * - Пользователь должен иметь статус администратора (isAdmin) или быть подтвержденным пользователем (isVerifiedUser)
 // * - А также пользователь должен обладать специальным разрешением (hasSpecialPermission) или временным пропуском (hasTemporaryPass)
 
-// True:
+// Terms:
 const isAdmin = false;
-const isVerifiedUser = false;
+const isVerifiedUser = true;
 const hasSpecialPermission = true;
 const hasTemporaryPass = false;
 
-// False:
-// const isAdmin = false;
-// const isVerifiedUser = true;
-// const hasSpecialPermission = false;
-// const hasTemporaryPass = false;
+// let isAccess
 
 // Solution:
-let isAccess = true;
-// let isAccess = false;
-
 if ((isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass)) {
     isAccess = true;
     console.log(isAccess);
@@ -28,4 +21,3 @@ if ((isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass)) {
     isAccess = false;
     console.log(isAccess);
 }
-// let giveMeAccess = (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass);
