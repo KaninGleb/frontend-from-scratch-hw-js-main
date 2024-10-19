@@ -7,41 +7,17 @@
 
 // Solution:
 
-// let dice1 = Math.floor(Math.random() * 6) + 1;
-// let dice2 = Math.floor(Math.random() * 6) + 1;
-// let isWinningDouble = (dice1 === dice2 && dice1 > 3);
+let dice1 = Math.floor(Math.random() * 6) + 1;
+let dice2 = Math.floor(Math.random() * 6) + 1;
+let isWinningDouble = (dice1 === dice2 && dice1 > 3);
 
-// console.log('Первый бросок: ' + dice1);
-// console.log('Второй бросок: ' + dice2);
+console.log('Первый бросок: ' + dice1);
+console.log('Второй бросок: ' + dice2);
 
-// if (isWinningDouble) {
-//   isWinningDouble = true;
-//   console.log('Выигрышный дубль!');
-// } else {
-//   isWinningDouble = false;
-//   console.log('Не выигрышный дубль.');
-// }
-
-let dice1 = Math.floor(Math.random() * 6) + 1; // случайное число от 1 до 6
-let dice2 = Math.floor(Math.random() * 6) + 1; // случайное число от 1 до 6
-let isWinningDouble = (dice1 === dice2) && (dice1 > 3); // проверка на выигрышный дубль
-
-// Возвращаем значения для проверки
-const executeScript = new Function(`
-  return { dice1: ${dice1}, dice2: ${dice2} };
-`);
-
-const result = executeScript(); // Запускаем функцию и получаем результат
-
-// Проверяем, что значения находятся в пределах от 1 до 6
-if (result.dice1 < 1 || result.dice1 > 6 || result.dice2 < 1 || result.dice2 > 6) {
-  throw new Error('Значения кубиков должны быть от 1 до 6');
-}
-
-console.log('Первый бросок: ' + result.dice1);
-console.log('Второй бросок: ' + result.dice2);
 if (isWinningDouble) {
   console.log('Выигрышный дубль!');
+  isWinningDouble = true;
 } else {
   console.log('Не выигрышный дубль.');
+  isWinningDouble = false;
 }
