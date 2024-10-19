@@ -2,7 +2,7 @@
 //  * Балл может быть целым числом от 0 до 100, а оценки 'F' (0 - 49), 'D' (50 - 69), 'C' (70-79), 'B' (80 - 89), 'A' (90 - 100)
 //  * Результат сохраните в переменной grade.
 
-const score = Math.floor(Math.random() * 101); 
+let score = Math.floor(Math.random() * 101); 
 // console.log(score);
 
 // let score = 70;
