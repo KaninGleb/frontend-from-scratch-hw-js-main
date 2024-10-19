@@ -22,15 +22,14 @@
 //   isWinningDouble = false;
 // }
 
-let dice1 = Math.ceil(Math.random() * 6) // your code 
-let dice2 = Math.ceil(Math.random() * 6) // your code
-let isWinningDouble = (dice1 === dice2) && (dice1 > 3) // your code
+let dice1 = Math.ceil(Math.random() * 6);
+let dice2 = Math.ceil(Math.random() * 6);
+let isWinningDouble = (dice1 === dice2) && (dice1 > 3);
 
-
-console.log('Первый бросок: ' + dice1)
-console.log('Второй бросок: ' + dice2)
+console.log('Первый бросок: ' + dice1);
+console.log('Второй бросок: ' + dice2);
 if (isWinningDouble) {
-  console.log('Выигрышный дубль!')
+  console.log('Выигрышный дубль!');
 } else {
-  console.log('Не выигрышный дубль.')
+  console.log('Не выигрышный дубль.');
 }
