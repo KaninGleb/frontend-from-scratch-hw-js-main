@@ -6,7 +6,7 @@
 // console.log(score);
 
 let score = 70;
-// let grade
+let grade
 
 if (score >= 0 && score <= 49) {
     grade = "F";
