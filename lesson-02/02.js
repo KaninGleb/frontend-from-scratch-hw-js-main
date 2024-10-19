@@ -3,24 +3,7 @@
 // * Дубль считается выигрышным, если на обоих дайсах выпало одно и то же число, и это число больше 3.
 // * Полученное булево значение сохраните в переменной isWinningDouble
 
-// * Для успешного прохождения тестов не меняйте названия переменных!
-
 // Solution:
-
-// let dice1 = Math.ceil(Math.random() * 6);
-// let dice2 = Math.ceil(Math.random() * 6);
-// let isWinningDouble = (dice1 === dice2 && dice1 > 3);
-
-// console.log('Первый бросок: ' + dice1);
-// console.log('Второй бросок: ' + dice2);
-
-// if (isWinningDouble) {
-//   console.log('Выигрышный дубль!');
-//   isWinningDouble = true;
-// } else {
-//   console.log('Не выигрышный дубль.');
-//   isWinningDouble = false;
-// }
 
 let dice1 = Math.ceil(Math.random() * 6);
 let dice2 = Math.ceil(Math.random() * 6);
