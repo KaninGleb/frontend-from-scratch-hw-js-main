@@ -8,7 +8,7 @@ let score = Math.floor(Math.random() * 101);
 // let score = 70;
 let grade
 
-if (score >= 0 && score <= 49) {
+if (score < 50) {
     grade = "F";
 } else if (score >= 50 && score <= 69) {
     grade = "D";
