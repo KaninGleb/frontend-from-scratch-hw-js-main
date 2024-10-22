@@ -5,7 +5,7 @@ let num_3 = Math.ceil(Math.random() * 3);
 
 
 function findLargest(number1, number2, number3) {
-    return(Math.max(number1, number2, number3))
+    return(Math.max(number1, number2, number3));
 }
 
 console.log(num_1, num_2, num_3);
