@@ -8,5 +8,5 @@ function findLargest(number1, number2, number3) {
     return(Math.max(number1, number2, number3));
 }
 
-console.log(num_1, num_2, num_3);
-console.log(`🥇 Winner: ${findLargest(num_1, num_2, num_3)}`);
+console.log(`Numbers: ${num_1}, ${num_2}, ${num_3}.`);
+console.log(`🥇 Winner: ${findLargest(num_1, num_2, num_3)} !!!`);
