@@ -15,14 +15,14 @@ const game = {
   },
   addResource(resource, amount) {
     if (this.resources.hasOwnProperty(resource)) {
-      if (typeof amount === 'number') {
+      if (typeof amount === 'number' && amount >= 0) {   
         this.resources[resource] += amount;
         console.log(`${amount} ${resource} added. Current amount: ${this.resources[resource]}`);
       } else {
-        console.log('Amount must be a positive number.');
+        console.error('Amount must be a positive number.');
       }
     } else {
-      console.log('Invalid resource');
+      console.error('Invalid resource');
     }
   }
 }
@@ -34,3 +34,4 @@ game.addResource('lumber', 30);
 game.addResource('stone', 15);
 game.addResource('food', 20);
 game.addResource('gold', -30);
+game.addResource('gold', 0);
