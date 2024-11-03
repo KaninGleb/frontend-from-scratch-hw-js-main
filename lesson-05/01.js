@@ -19,10 +19,10 @@ const game = {
         this.resources[resource] += amount;
         console.log(`${amount} ${resource} added. Current amount: ${this.resources[resource]}`);
       } else {
-        console.error('Amount must be a positive number.');
+        console.log('Amount must be a positive number.');
       }
     } else {
-      console.error('Invalid resource');
+      console.log('Invalid resource');
     }
   }
 }
