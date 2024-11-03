@@ -25,6 +25,8 @@
 //   'The Persistence of Memory': 'Salvador Dali'
 // }
 
+
+// OPTION 1
 const gallery = {
   'Mona Lisa': 'Leonardo da Vinci',
   'Starry Night': 'Vincent van Gogh',
@@ -39,7 +41,33 @@ function updateGallery(gallery, artName, newValue) {
   }
 }
 
+
+// OPTION 2
+const modifiedGallery = {
+  artObjects: {
+      'Mona Lisa': 'Leonardo da Vinci',
+      'Starry Night': 'Vincent van Gogh',
+      'The Scream': 'Edvard Munch',
+  },
+  updateArt(artName, newValue) {
+      if (this.artObjects.hasOwnProperty(artName)) {
+          this.artObjects[artName] = newValue;
+      } else {
+          this.artObjects[artName] = newValue;
+      }
+  }
+};
+
+
+// ✅ Checking OPTION 1
 updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506');
 updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali');
 
 console.log(gallery);
+
+
+// ✅ Checking OPTION 2
+modifiedGallery.updateArt('Mona Lisa', 'Leonardo da Vinci, 1503-1506');
+modifiedGallery.updateArt('The Persistence of Memory', 'Salvador Dali');
+
+console.log(modifiedGallery.artObjects);
