@@ -42,7 +42,3 @@ document.getElementById('prev-button').addEventListener('click', function () {
 
 
 updateImage();
-
-
-
-
