@@ -7,17 +7,17 @@
 
 // ✅ SOLUTION
 // OPTION 1
-function capitalizeWords(str) {
-  const words = str.split(' ');
-  const capitalizedWords = [];
+// function capitalizeWords(str) {
+//   const words = str.split(' ');
+//   const capitalizedWords = [];
 
-  for (let i = 0; i < words.length; i++) {
-    const word = words[i];
-    const capitalize = word[0].toUpperCase() + word.slice(1);
-    capitalizedWords.push(capitalize);
-  }
-  return capitalizedWords.join(' ');
-}
+//   for (let i = 0; i < words.length; i++) {
+//     const word = words[i];
+//     const capitalize = word[0].toUpperCase() + word.slice(1);
+//     capitalizedWords.push(capitalize);
+//   }
+//   return capitalizedWords.join(' ');
+// }
 
 
 // OPTION 2
