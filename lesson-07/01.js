@@ -6,6 +6,7 @@
 
 
 // ✅ SOLUTION
+// OPTION 1
 function capitalizeWords(str) {
   const words = str.split(' ');
   const capitalizedWords = [];
@@ -16,6 +17,12 @@ function capitalizeWords(str) {
     capitalizedWords.push(capitalize);
   }
   return capitalizedWords.join(' ');
+}
+
+
+// OPTION 2
+function capitalizeWords (str) {
+  return str.split(' ').map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
 }
 
 
