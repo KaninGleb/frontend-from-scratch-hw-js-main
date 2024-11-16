@@ -14,13 +14,13 @@
 
 
 // OPTION 2
-// function isNumeric(str) {
-//   return Number(str) ? true : false;
-// }
+function isNumeric(str) {
+  return Number(str) ? true : false;
+}
 
 
 // OPTION 3
-const isNumeric = str => Number(str) ? true : false;
+// const isNumeric = str => Number(str) ? true : false;
 
 
 // ✅ Checking
