@@ -30,29 +30,63 @@ const countdownDisplay = document.getElementById('countdown')
 let isTimerStarted = false;
 let timerId;
 
+
+// // setInterval
+
+// startButton.addEventListener('click', () => {
+//   if (isTimerStarted) return;
+
+//   isTimerStarted = true;
+//   let counter = 3
+//   countdownDisplay.textContent = counter;
+
+//   timerId = setInterval(() => {
+//     counter--;
+//     if (counter > 0) {
+//       countdownDisplay.textContent = counter;
+//     } else {
+//       countdownDisplay.textContent = '🚀';
+//       clearInterval(timerId);
+//       isTimerStarted = false;
+//     }
+//   }, 1000);
+// })
+
+// cancelButton.addEventListener('click', () => {
+//   if (!isTimerStarted) return;
+
+//   clearInterval(timerId);
+//   countdownDisplay.textContent = 'Отменено';
+//   isTimerStarted = false;
+// })
+
+
+// // setTimeout
+
+function startCountdown(counter) {
+  countdownDisplay.textContent = counter;
+
+  if (counter > 0) {
+    timerId = setTimeout(() => {
+      startCountdown(counter - 1);
+    }, 1000);
+  } else {
+    countdownDisplay.textContent = '🚀';
+    isTimerStarted = false;
+  }
+}
+
 startButton.addEventListener('click', () => {
   if (isTimerStarted) return;
 
   isTimerStarted = true;
-  let counter = 3
-  countdownDisplay.textContent = counter;
-
-  timerId = setInterval(() => {
-    counter--;
-    if (counter > 0) {
-      countdownDisplay.textContent = counter;
-    } else {
-      countdownDisplay.textContent = '🚀';
-      clearInterval(timerId);
-      isTimerStarted = false;
-    }
-  }, 1000);
+  startCountdown(3);
 })
 
 cancelButton.addEventListener('click', () => {
   if (!isTimerStarted) return;
 
-  clearInterval(timerId);
+  clearTimeout(timerId);
   countdownDisplay.textContent = 'Отменено';
   isTimerStarted = false;
 })
