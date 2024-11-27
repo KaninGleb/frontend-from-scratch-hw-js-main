@@ -5,9 +5,23 @@
 }
 
 .pet {
-  padding: 5px;
   font-size: 24px;
   cursor: pointer;
+  width: 55px;
+  height: 55px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+
+  /* For pets added to cart: */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pet:hover {
+  background-color: #e0e0e0;
 }
 
 .cart {
