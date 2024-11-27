@@ -62,7 +62,29 @@ function updateCartDisplay() {
 
 clearCartButton.addEventListener('click', function () {
   cart.length = 0
+  messageBox.textContent = '';                              // Upd
   updateCartDisplay()
 })
 
 // Твой код:
+// 1. При клике на кнопку с питомцем, id питомца должен добавляться в массив cart.
+// 2. После добавления питомца в корзину, необходимо вызвать функцию updateCartDisplay (она обновит отображение корзины).
+// 3. В корзину можно добавить не более 3 питомцев. Если пользователь пытается добавить больше, то в messageBox должен появится текст: 'Вы не можете добавить более 3 питомцев'
+
+petShop.addEventListener('click', function(event) {
+  if (event.target.classList.contains('pet')) {
+    const petId = event.target.id;
+
+    if (cart.length < 3) {
+      cart.push(petId);
+      updateCartDisplay()
+      messageBox.textContent = '';
+    } else {
+      messageBox.textContent = 'Вы не можете добавить более 3 питомцев';
+
+      setTimeout(() => {
+        messageBox.textContent = '';
+      }, 2000)
+    }
+  }
+})
