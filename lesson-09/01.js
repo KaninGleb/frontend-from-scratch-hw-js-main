@@ -27,6 +27,16 @@
 const filter = (array, callback) => {
     const result = [];
 
+    // // for
+    // for (let i = 0; i < array.length; i++) {
+    //     const el = array[i];
+    //
+    //     if (callback(el, i)) {
+    //         result.push(el);
+    //     }
+    // }
+
+    // forEach
     array.forEach((el, index) => {
         if (callback(el, index)) {
             result.push(el);
@@ -37,10 +47,10 @@ const filter = (array, callback) => {
 
 
 // ✅ Checking
-const numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5];
 
 const oddNumbers = filter(numbers, (element, index) => {
-    return element % 2 !== 0
+    return element % 2 !== 0;
 });
 
 console.log(oddNumbers);
