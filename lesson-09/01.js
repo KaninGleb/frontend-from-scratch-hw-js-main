@@ -54,3 +54,10 @@ const oddNumbers = filter(numbers, (element, index) => {
 });
 
 console.log(oddNumbers);
+
+
+
+// ✅ Checking .filter
+const filtered = arr => arr.filter(arr => arr % 2 !== 0);
+
+console.log(filtered(numbers));
